@@ -25,10 +25,6 @@ class EventServiceProvider extends ServiceProvider
         ],
         ProductUpdatedEvent::class => [
             ProductUpdatedListener::class
-        ],
-        OrderCompletedEvent::class => [
-            NotifyAdminListener::class,
-            NotifyAmbassadorListener::class
         ]
     ];
 

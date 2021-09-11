@@ -41,7 +41,7 @@ export default {
     '@nuxtjs/axios',
 
     ['nuxt-stripe-module', {
-      publishableKey: 'pk_test_51H0wSsFHUJ5mamKON9UhPL8Rws5mF3p5aTqKK9kh2Rvk0DnQcpSLYujzQoWqTyp02tkWjYB8o9YRKSFWThARxyT100uqDDnoVy',
+      publishableKey: 'pk_test_51JY7xGFzpBE7WMehGT3AFcEtAOnpLTQ55yI3XM0NBG4iQQP3J7GHsqMyOmnIoKd2wvrZIrfPBn5Y96CIFra60Pzo00sxRpUUSX',
     }],
   ],
 
