@@ -13,52 +13,52 @@ class KafkaQueue extends Queue implements QueueContract
 
     public function __construct($consumer)
     {
-       $this->consumer = $consumer;
+        $this->consumer = $consumer;
     }
 
     public function size($queue = null)
     {
-
     }
 
-    
-    public function push($job, $data= '', $queue = null)
+
+    public function push($job, $data = '', $queue = null)
     {
-        
     }
 
-    
+
     public function pushRaw($payload, $queue = null, array $options = [])
     {
-        
     }
 
     public function later($delay, $job, $data = '', $queue = null)
     {
-        
     }
 
     public function pop($queue = null)
     {
         $this->consumer->subscribe(['default']);
 
+        try {
+
             $message = $this->consumer->consume(120 * 1000);
 
             switch ($message->err) {
                 case RD_KAFKA_RESP_ERR_NO_ERROR:
-                var_dump(($message->payload));
-                   break;
+                    $job = unserialize($message->payload);
+                    $job->handle();
+                    break;
                 case RD_KAFKA_RESP_ERR_PARTITION_EOF:
-                    echo "No more messages; will wait for more\n";
+                    var_dump("No more messages; will wait for more\n");
                     break;
                 case RD_KAFKA_RESP_ERR__TIMED_OUT:
-                    echo "Timed out\n";
-                        break;
+                    var_dump("Timed out\n");
+                    break;
                 default:
                     throw new \Exception($message->errstr(), $message->err);
                     break;
-
             }
+        } catch (\Exception $e) {
+            var_dump($e->getMessage());
+        }
     }
-
 }
