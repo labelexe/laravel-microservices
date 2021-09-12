@@ -4,8 +4,39 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6cadd819a6415b190ae2704ced6e6c8b",
+    "content-hash": "2bc0da4fb310cc26cd21bd55337a56b8",
     "packages": [
+        {
+            "name": "antoniopapa/kafka-queue",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antoniopapa/kafka-queue.git",
+                "reference": "e4158cd128b7f23c81a615c3613422100ee0ae3b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antoniopapa/kafka-queue/zipball/e4158cd128b7f23c81a615c3613422100ee0ae3b",
+                "reference": "e4158cd128b7f23c81a615c3613422100ee0ae3b",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^8.50"
+            },
+            "default-branch": true,
+            "type": "library",
+            "authors": [
+                {
+                    "name": "Antonio Papa",
+                    "email": "antoniopapa1991@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/antoniopapa/kafka-queue/tree/main",
+                "issues": "https://github.com/antoniopapa/kafka-queue/issues"
+            },
+            "time": "2021-07-19T15:00:20+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -7801,7 +7832,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "antoniopapa/kafka-queue": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
