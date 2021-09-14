@@ -4,39 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9af6bed65f147844dce1a5759713a46e",
+    "content-hash": "b167254a61a67ecb60fd7bf6e43094f9",
     "packages": [
-        {
-            "name": "antoniopapa/kafka-queue",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/antoniopapa/kafka-queue.git",
-                "reference": "e4158cd128b7f23c81a615c3613422100ee0ae3b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/antoniopapa/kafka-queue/zipball/e4158cd128b7f23c81a615c3613422100ee0ae3b",
-                "reference": "e4158cd128b7f23c81a615c3613422100ee0ae3b",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^8.50"
-            },
-            "default-branch": true,
-            "type": "library",
-            "authors": [
-                {
-                    "name": "Antonio Papa",
-                    "email": "antoniopapa1991@gmail.com"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/antoniopapa/kafka-queue/tree/main",
-                "issues": "https://github.com/antoniopapa/kafka-queue/issues"
-            },
-            "time": "2021-07-19T15:00:20+00:00"
-        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.3",
@@ -784,6 +753,42 @@
                 }
             ],
             "time": "2021-08-28T21:34:50+00:00"
+        },
+        {
+            "name": "green/kafka-queue",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antoniosthanasisgit/kafka-queue.git",
+                "reference": "e0e641538761fb35150989bc7164f2efce638625"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antoniosthanasisgit/kafka-queue/zipball/e0e641538761fb35150989bc7164f2efce638625",
+                "reference": "e0e641538761fb35150989bc7164f2efce638625",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^8.60"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Green\\KafkaQueue\\": "src/"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Green",
+                    "email": "antonios.thanasis@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/antoniosthanasisgit/kafka-queue/tree/master",
+                "issues": "https://github.com/antoniosthanasisgit/kafka-queue/issues"
+            },
+            "time": "2021-09-12T07:51:40+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -9335,7 +9340,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "antoniopapa/kafka-queue": 20
+        "green/kafka-queue": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
