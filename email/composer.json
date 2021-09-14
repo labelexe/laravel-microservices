@@ -5,7 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "antoniopapa/kafka-queue": "dev-main",
+        "green/kafka-queue": "dev-master",
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
@@ -23,14 +23,14 @@
     },
     "repositories": [{
         "type": "vcs",
-        "url": "https://github.com/antoniopapa/kafka-queue.git"
+        "url": "https://github.com/antoniosthanasisgit/kafka-queue.git"
     }],
     "autoload": {
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Kafka\\": "vendor/antoniopapa/kafka-queue/src" 
+            "Kafka\\": "vendor/green/kafka-queue/src/" 
         }
     },
     "autoload-dev": {
